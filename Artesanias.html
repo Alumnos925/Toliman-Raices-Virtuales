@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Artesanías</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/artesanias.css">
+<link rel="stylesheet" href="css/Botones.css">
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header class="encabezado">
+    <img src="img/logotoliman.png" class="logo">
+    <h1>Artesanías</h1>
+</header>
+
+<!-- MENÚ -->
+<nav class="menu">
+    <a href="index.html" data-hover="Ndu&#818;i"><span>Inicio</span></a>
+    <a href="Historia.html" data-hover="Mä Hämu&#818;"><span>Historia</span></a>
+    <a href="Cultura.html" data-hover="Ya 'yu&#818;"><span>Cultura</span></a>
+    <a href="Artesanias.html"  class="activo"  data-hover="T'e&#818;di"><span>Artesanías</span></a>
+    <a href="Gastronomia.html" data-hover="Ñhüni"><span>Gastronomía</span></a>
+    <a href="Zonas Turisticas.html" data-hover="Ba K'öni"><span>Zonas Turísticas</span></a>
+    <a href="hospedaje.html" data-hover="Tsa&#818;ya&#818;"><span>Hospedaje</span></a>
+    <a href="galeria.html" data-hover="K'oi"><span>Galería</span></a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-content">
+<h1>Artesanías de Tolimán</h1>
+<p>Tradición, identidad y trabajo hecho a mano</p>
+<button onclick="document.getElementById('tipos').scrollIntoView()">Explorar</button>
+</div>
+</section>
+
+<!-- TIPOS -->
+<section id="tipos" class="fade">
+<h2>Tipos de Artesanías</h2>
+
+<div class="grid-artesanias">
+
+<div class="card" onclick="abrirCatalogo('bordados')">
+<img src="img/bordados.jpeg">
+<h3>Bordados</h3>
+<p>Diseños tradicionales llenos de color y cultura.</p>
+</div>
+
+<div class="card" onclick="abrirCatalogo('madera')">
+  
+<img src="img/Madereria.jpg">
+<h3>Madera</h3>
+.
+<p>Piezas talladas a mano con gran detalle.</p>
+</div>
+
+<div class="card" onclick="abrirCatalogo('bordados')">
+<img src="img/canastas.jpeg">
+<h3>Cestería</h3>
+<p>Elaboradas con palma e ixtle.</p>
+</div>
+
+<div class="card">
+<img src="img/ceramica.jpg">
+<h3>Cerámica</h3>
+<p>Arte en barro con identidad local.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- GALERIA -->
+<section class="fade">
+<h2>Galería</h2>
+
+<div class="carousel-container">
+<div class="carousel" id="carousel">
+<img src="img/bordados.jpeg">
+<img src="img/canastas.jpeg">
+<img src="img/casteria.jpeg">
+<img src="img/toliman.1.jpg">
+</div>
+</div>
+
+</section>
+
+<!-- HISTORIA -->
+<section class="fade">
+<h2>Historia</h2>
+
+<div class="historia">
+<p>
+Las artesanías de Tolimán reflejan la herencia cultural de las comunidades otomí-chichimecas. 
+Cada pieza es elaborada con técnicas tradicionales transmitidas de generación en generación.
+</p>
+</div>
+
+</section>
+
+<!-- UBICACIONES -->
+<section class="fade">
+  <h2>Dónde encontrarlas</h2>
+
+  <div class="lista">
+
+    <div class="item">
+      📍 Mercado municipal  
+      <br>
+      <button onclick="abrirMapa('https://www.google.com/maps?q=Mercado+Toliman+Queretaro')">
+        Ver mapa
+      </button>
+    </div>
+
+    <div class="item">
+      📍 Tianguis local  
+      <br>
+      <button onclick="abrirMapa('https://www.google.com/maps?q=Tianguis+Toliman+Queretaro')">
+        Ver mapa
+      </button>
+    </div>
+
+    <div class="item">
+      📍 Comunidades artesanas  
+      <br>
+      <button onclick="abrirMapa('https://www.google.com/maps?q=Toliman+Queretaro+Comunidades+Artesanas')">
+        Ver mapa
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- DESTACADO -->
+<section class="fade">
+<h2>Artesanía Destacada</h2>
+
+<div class="destacado">
+<img src="img/destacado.jpg">
+
+<div class="destacado-text">
+<h3>Pieza del mes</h3>
+<p>Una muestra única del talento artesanal local, elaborada completamente a mano.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- MODAL MAPA -->
+<div id="modalMapa" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarMapa()">X</span>
+        <iframe id="mapaFrame" src="" frameborder="0"></iframe>
+    </div>
+</div>
+
+<!-- MODAL CATALOGO -->
+<div id="modalCatalogo" class="modal-catalogo">
+
+    <div class="contenido-catalogo">
+
+        <span class="cerrar-catalogo" onclick="cerrarCatalogo()">X</span>
+
+        <div id="contenidoCatalogo"></div>
+
+    </div>
+
+</div>
+
+<!-- JS CORRECTO -->
+<script src="Hospedaje.js"></script>
+<script src="js/mapa.js"></script>
+<script src="js/catalogo.js"></script>
+
+</body>
+</html>

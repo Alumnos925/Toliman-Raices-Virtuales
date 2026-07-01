@@ -1,0 +1,147 @@
+/* ==========================================================================
+   ESTILOS DE LA NOTIFICACIÓN FLOTANTE
+   ========================================================================== */
+
+.notificacion {
+
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #2e8b57;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    max-width: 400px;
+    z-index: 9999;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.5s ease-in-out;
+}
+.notificacion.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.evento-card {
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 12px;
+    margin-top: 12px;
+    backdrop-filter: blur(3px);
+}
+
+.evento-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.evento-card p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Mantiene el diseño original intacto al usar enlaces */
+.enlace-evento-noti {
+    text-decoration: none; /* Quita el subrayado predeterminado */
+    color: inherit;         /* Hereda el color blanco que ya programaste */
+    display: block;         /* Hace que todo el recuadro sea clickable */
+}
+
+/* Opcional: Si quieres un comportamiento interactivo sutil al pasar el mouse */
+.enlace-evento-noti:hover .evento-card {
+    background: rgba(255, 255, 255, 0.25); /* Se aclara ligeramente sin perder la transparencia */
+    transition: background 0.2s ease;
+}
+/* ==========================================================================
+   EFECTO DE ILUMINACIÓN AUTOMÁTICA AL HACER CLIC DESDE LA NOTIFICACIÓN
+   ========================================================================== */
+
+/* Cuando la tarjeta del calendario coincide con el ID del enlace (#) */
+.evento-card:target, 
+.tarjeta-evento:target { /* Usa aquí la clase exacta que tengan tus tarjetas en cultura.html */
+    background-color: rgba(46, 139, 87, 0.2) !important; /* Un fondo verde suave */
+    border: 2px solid #2e8b57 !important;                 /* Borde verde Tolimán */
+    box-shadow: 0 0 20px rgba(46, 139, 87, 0.6);
+    transform: scale(1.02);                               /* Se agranda un poquito sutilmente */
+    transition: all 0.4s ease-in-out;
+    animation: iluminarTarjeta 2s ease-in-out;             /* Hace la animación de parpadeo */
+}
+
+/* Animación para que el brillo aparezca y desaparezca suavemente */
+@keyframes iluminarTarjeta {
+    0% {
+        transform: scale(1.02);
+        box-shadow: 0 0 25px rgba(46, 139, 87, 0.8);
+    }
+    50% {
+        transform: scale(1.04);
+        background-color: rgba(46, 139, 87, 0.4); /* Se intensifica a la mitad */
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Regresa a su estado normal */
+    }
+}
+/* ==========================================================================
+   ESTILOS DEL MENÚ
+   ========================================================================== */
+
+.menu {
+    display: flex;
+    background-color: #0c592b;
+    padding: 15px;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.menu a {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu a.activo {
+    background-color: #f1c40f;
+    color: #333;
+}
+
+.menu a span {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu a::after {
+    content: attr(data-hover);
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, 100%);
+    width: 100%;
+    text-align: center;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    color: #fafaf9;
+}
+
+.menu a.activo::after {
+    color: #333333;
+}
+
+.menu a:hover span {
+    transform: translateY(-150%);
+    opacity: 0;
+}
+
+.menu a:hover::after {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}

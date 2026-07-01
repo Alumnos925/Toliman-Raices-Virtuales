@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Zonas Turísticas - Tolimán</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/Botones.css">
+    <link rel="stylesheet" href="css/zonas.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.css" />
+
+    <script src="js/Hospedaje.js" defer></script>
+    <script src="js/gastronomia.js" defer></script>
+    <script src="js/zonas.js" defer></script>
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <img src="img/Turismo.jpeg" class="logo" alt="Logo Turismo Tolimán">
+        <h1>Zonas Turísticas</h1>
+    </header>
+
+    <nav class="menu">
+    <a href="index.html" data-hover="Ndu̲i"><span>Inicio</span></a>
+    <a href="Historia.html" data-hover="Mä Hämu̲"><span>Historia</span></a>
+    <a href="Cultura.html" data-hover="Ya 'yu̲"><span>Cultura</span></a>
+    <a href="Artesanias.html" data-hover="T'e̲di"><span>Artesanías</span></a>
+    
+    <a href="Gastronomia.html" data-hover="Ñhüni"><span>Gastronomía</span></a>
+    
+    <a href="Zonas Turisticas.html" class="activo" data-hover="Ba K'öni"><span>Zonas Turísticas</span></a>
+    <a href="hospedaje.html" data-hover="Tsa̲ya̲"><span>Hospedaje</span></a>
+    <a href="galeria.html" data-hover="K'oi"><span>Galería</span></a>
+</nav>
+
+    <section class="contenido-intro">
+        <p>Tolimán ofrece atractivos naturales, culturales y religiosos que promueven el turismo local.</p>
+    </section>
+
+    <section class="zonas-section">
+        <h2 class="section-main-title">🌏 Descubre Tolimán</h2>
+        
+        <div class="filtros-container">
+            <button onclick="filtrarZonas('todas')">Todas</button>
+            <button onclick="filtrarZonas('naturaleza')">Naturaleza</button>
+            <button onclick="filtrarZonas('cultura')">Cultura</button>
+            <button onclick="filtrarZonas('historia')">Historia</button>
+            <button onclick="filtrarZonas('mirador')">Miradores</button>
+        </div>
+
+        <div id="contenedorZonas" class="contenedor-tarjetas">
+            </div>
+    </section>
+
+    <div id="modal" class="modal-popup">
+        <div class="modal-wrapper">
+            <span class="close-btn" onclick="cerrarModal()">×</span>
+            <h2 id="modalTitulo"></h2>
+            
+            <div class="likes-container">
+                <button onclick="darLike()">❤️</button>
+                <span id="likeCount">0</span>
+            </div>
+
+            <div class="modal-carrusel">
+                <button onclick="cambiarImagen(-1)">❮</button>
+                <img id="modalImg" alt="Galería">
+                <button onclick="cambiarImagen(1)">❯</button>
+            </div>
+
+            <p id="modalDesc"></p>
+            <iframe id="mapaFrame" width="100%" height="200" style="border:0; border-radius:10px; margin-top:15px;" loading="lazy"></iframe>
+        </div>
+    </div>
+
+    <hr>
+
+    <section id="mapa" class="mapa-section">
+        <h2 class="section-title green">Toliman Te Espera: Encuentra tu Proxima Aventura</h2>
+        <div class="mapa-container">
+            <div class="mapa-sidebar">
+                <h3>Puntos de Interes</h3>
+                <button class="btn-mi-ubicacion" id="btnMiUbicacion">
+                    <span>📍</span> Mi Ubicacion
+                </button>
+                
+                <div class="poi-list" id="poiList">
+                    </div>
+                
+                <div class="route-info" id="routeInfo" style="display: none;">
+                    <h4>Ruta calculada:</h4>
+                    <p id="routeDistance"></p>
+                    <p id="routeTime"></p>
+                    <div class="route-buttons">
+                        <button class="btn-clear-route" id="clearRoute">Limpiar ruta</button>
+                        <a id="googleMapsLink" href="#" target="_blank" class="btn-google-maps">Abrir en Google Maps</a>
+                    </div>
+                </div>
+            </div>
+            <div id="map" class="mapa-leaflet"></div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@3.2.12/dist/leaflet-routing-machine.js"></script>
+
+</body>
+</html> 

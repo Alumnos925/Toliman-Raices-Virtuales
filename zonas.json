@@ -1,0 +1,82 @@
+[
+    {
+        "nombre": "Peña de Bernal",
+        "categoria": "naturaleza",
+        "imagenes": ["https://picsum.photos/id/1015/600/400", "https://picsum.photos/id/1016/600/400"],
+        "desc": "Uno de los monolitos más grandes del mundo.",
+        "mapa": "https://maps.google.com/maps?q=Pena%20de%20Bernal&t=&z=13&ie=UTF8&iwloc=&output=embed",
+        "lat": 20.7492, "lng": -99.9461, "icono": "🏔️"
+    },
+    {
+        "nombre": "Casa de Cultura",
+        "categoria": "cultura",
+        "imagenes": ["https://picsum.photos/id/1019/600/400", "https://picsum.photos/id/1021/600/400"],
+        "desc": "Espacio cultural con eventos y tradiciones.",
+        "mapa": "https://maps.google.com/maps?q=Toliman%20Centro&t=&z=13&ie=UTF8&iwloc=&output=embed",
+        "lat": 20.8897, "lng": -99.9144, "icono": "🏛️"
+    },
+    {
+        "nombre": "Templo San Miguel",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Templo histórico representativo del municipio.",
+        "mapa": "https://maps.google.com/maps?q=San%20Miguel%20Toliman&t=&z=13&ie=UTF8&iwloc=&output=embed",
+        "lat": 20.8765, "lng": -99.9321, "icono": "⛪"
+    },
+    {
+        "nombre": "Mirador El Pinal",
+        "categoria": "mirador",
+        "imagenes": ["https://picsum.photos/id/1035/600/400", "https://picsum.photos/id/1039/600/400"],
+        "desc": "Vista panorámica espectacular del semidesierto.",
+        "mapa": "https://maps.google.com/maps?q=Cerro%20del%20Fronton&t=&z=13&ie=UTF8&iwloc=&output=embed",
+        "lat": 20.9045, "lng": -99.8998, "icono": "⛰️"
+    },
+    {
+        "nombre": "Capilla Señor de Chalma",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Capilla tradicional dedicada al Señor de Chalma.",
+        "mapa": "https://maps.google.com/?cid=5743025531268576666&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ",
+        "lat": 20.9048, "lng": -99.9348, "icono": "⛪"
+    },
+    {
+        "nombre": "Capilla Santo Cristo",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Lugar de culto histórico y tradicional en la comunidad.",
+        "mapa": "https://maps.app.goo.gl/rKBivDvJsWjMgYyA6",
+        "lat": 20.9213, "lng": -99.9603, "icono": "⛪"
+    },
+    {
+        "nombre": "Capilla Principal de Casa Blanca",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Capilla representativa de la comunidad de Casa Blanca.",
+        "mapa": "https://maps.google.com/?cid=1472353666214810747&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ",
+        "lat": 20.9082, "lng": -99.9291, "icono": "⛪"
+    },
+    {
+        "nombre": "Capilla de San José",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Capilla de culto religioso local de Tolimán.",
+        "mapa": "https://maps.google.com/?cid=6205875124561310739&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ",
+        "lat": 20.8952, "lng": -99.9204, "icono": "⛪"
+    },
+    {
+        "nombre": "Capilla De San Isidro",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Ubicación tradicional de la Capilla de San Isidro.",
+        "mapa": "https://maps.google.com/?cid=771537149786066962&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ",
+        "lat": 20.9320, "lng": -99.9697, "icono": "⛪"
+    },
+    {
+        "nombre": "Capilla 7",
+        "categoria": "historia",
+        "imagenes": ["https://picsum.photos/id/1043/600/400", "https://picsum.photos/id/1041/600/400"],
+        "desc": "Punto de interés histórico religioso en el municipio.",
+        "mapa": "https://maps.google.com/?cid=7158122565710675362&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ",
+        "lat": 20.9332, "lng": -99.9696, "icono": "⛪"
+    }
+]

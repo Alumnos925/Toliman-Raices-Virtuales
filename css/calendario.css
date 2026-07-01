@@ -1,0 +1,558 @@
+/* 1. CONFIGURACIÓN GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+/* 2. ENCABEZADO Y PIE DE PÁGINA */
+.main-header {
+    text-align: center;
+    padding: 40px 20px;
+    color: #003366;
+}
+
+.main-header h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+/* AJUSTE DEL PIE DE PÁGINA */
+.pie-pagina {
+    background-color: #008f4c; 
+    color: white;
+    margin-top: 50px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.material-symbols-outlined {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+/* Colores de iconos en footer */
+.telefono { color: #29cf66; }
+.correo { color: #081a90; }
+.icono-ubicacion { color: #b60d01; }
+.mapa { color: #000000; }
+.grupo { color: #070707; }
+.fecha { color: #fbfbfd; }
+.web { color: #0505ad; }
+
+.columna-footer {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.columna-footer p {
+    font-size: 14px !important;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.columna-footer h3 {
+    font-size: 16px !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* 3. CONTENEDOR DE TARJETAS */
+.contenedor-calendario {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    gap: 25px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* 4. ESTRUCTURA DE LA TARJETA */
+.tarjeta-evento {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    height: 450px;
+}
+
+.tarjeta-evento:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.imagen-evento {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.tarjeta-evento:hover .imagen-evento {
+    transform: scale(1.1);
+}
+
+/* 5. RECUADRO DE FECHA (BADGE) */
+.badge-fecha {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #001a33;
+    color: white;
+    padding: 15px 8px;
+    z-index: 10;
+    text-align: center;
+    min-width: 55px;
+    font-weight: bold;
+}
+
+.mes-txt { 
+    display: block; 
+    font-size: 12px; 
+    text-transform: uppercase; 
+}
+
+.dia-txt { 
+    display: block; 
+    font-size: 15px; 
+}
+
+/* 6. CUADRO DE INFORMACIÓN */
+.info-evento {
+    padding: 20px 15px;
+    border-top: 5px solid #c01a5b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255,255,255,0.95);
+    transition: all 0.5s ease;
+    z-index: 5;
+    max-height: 80px;
+    overflow: hidden;
+    cursor: default; 
+}
+
+.tarjeta-evento:hover .info-evento {
+    max-height: 320px;
+    background: white;
+}
+
+.info-evento h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: #333;
+}
+
+/* UBICACIÓN (Texto estático, sin links) */
+.ubicacion {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    opacity: 0; /* Se revela al hacer hover en la tarjeta */
+    transition: opacity 0.3s;
+}
+
+.detalles {
+    font-size: 13px;
+    color: #444;
+    margin-top: 10px;
+    line-height: 1.5;
+    text-align: justify;
+    opacity: 0; /* Se revela al hacer hover en la tarjeta */
+    transition: opacity 0.3s;
+}
+
+.tarjeta-evento:hover .ubicacion, 
+.tarjeta-evento:hover .detalles {
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+/* 7. ICONOS DINÁMICOS DENTRO DEL CALENDARIO */
+.contenedor-calendario .icono-ubicacion,
+.contenedor-calendario .fecha {
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.contenedor-calendario .icono-ubicacion {
+    color: #e53935;
+    animation: reboteUbicacion 1.5s infinite ease-in-out,
+               brilloUbicacion 2s infinite alternate;
+}
+
+.contenedor-calendario .fecha {
+    color: #1b8f3a;
+    animation: brilloFecha 2s infinite alternate;
+}
+
+/* Animaciones */
+@keyframes reboteUbicacion {
+    0%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-5px) scale(1.08); }
+    60% { transform: translateY(0); }
+}
+
+@keyframes brilloUbicacion {
+    0% { text-shadow: 0 0 2px #ff8a80; }
+    100% { text-shadow: 0 0 6px #e53935, 0 0 12px #ff5252; }
+}
+
+@keyframes brilloFecha {
+    0% { text-shadow: 0 0 2px #7ee39d; }
+    100% { text-shadow: 0 0 5px #1b8f3a; }
+}
+
+/* 8. CABECERA SUPERIOR Y FILTROS */
+.header-superior {
+    background: linear-gradient(135deg, #008f4c, #00a65a);
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.header-superior h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+
+.filtros-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.btn-filtro {
+    padding: 8px 20px;
+    border: 2px solid #008f4c;
+    background: transparent;
+    color: #008f4c;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-filtro:hover, .btn-filtro.activo {
+    background: #008f4c;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0,143,76,0.3);
+}
+
+.ocultar { display: none !important; }
+
+/* 9. BOTÓN VOLVER */
+.btn-volver {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+}
+
+.btn-volver:hover {
+    background: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+}
+
+
+/* ==========================================================================
+   10. OPTIMIZACIÓN PARA COMPUTADORAS (Pantallas mayores a 768px)
+   Aquí mantenemos tus efectos interactivos y de animación originales
+   ========================================================================== */
+@media (min-width: 769px) {
+    .tarjeta-evento {
+        height: 450px; /* Regresa a su comportamiento original en PC */
+    }
+    
+    .imagen-evento {
+        height: 100%; /* La imagen cubre el fondo en PC */
+    }
+
+    .info-evento {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(255,255,255,0.95);
+        max-height: 80px;
+        overflow: hidden;
+    }
+
+    /* Efecto Hover solo funcional en Computadoras */
+    .tarjeta-evento:hover .info-evento {
+        max-height: 320px;
+        background: white;
+    }
+
+    .ubicacion {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .detalles {
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tarjeta-evento:hover .ubicacion, 
+    .tarjeta-evento:hover .detalles {
+        opacity: 1;
+        transition-delay: 0.2s;
+    }
+}
+
+/* ==========================================================================
+   11. OPTIMIZACIÓN PARA CELULARES (Pantallas chicas menores a 768px)
+   Adaptación del espacio para que sea fácil de leer con el dedo
+   ========================================================================== */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Menos espacio en los bordes de la pantalla */
+    }
+
+    /* Ajuste del Encabezado */
+    .header-superior {
+        padding: 60px 15px 20px 15px; /* Espacio extra arriba para que el botón volver no tape el título */
+    }
+
+    .header-superior h1 {
+        font-size: 40px; /* Texto un poco más chico para que no se corte */
+    }
+
+    /* Botón Volver responsivo */
+    .btn-volver {
+        position: absolute; /* Cambia a absoluto para que no te siga al scrollear en pantallas chicas */
+        top: 15px;
+        left: 15px;
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Filtros en celular */
+    .filtros-contenedor {
+        gap: 6px;
+        margin-bottom: 20px;
+    }
+
+    .btn-filtro {
+        padding: 6px 14px;
+        font-size: 13px; /* Botones ligeramente más compactos */
+    }
+
+    /* Grilla de Tarjetas en una sola columna limpia */
+    .contenedor-calendario {
+        grid-template-columns: 1fr; /* Una sola tarjeta por fila en celular */
+        gap: 15px;
+    }
+
+    /* Tarjetas adaptadas para lectura táctil */
+    .tarjeta-evento {
+        min-height: auto; 
+        height: auto; /* Se adapta al largo del texto */
+    }
+
+    .info-evento {
+        max-height: none; /* No escondemos el texto, se muestra completo directamente */
+    }
+
+    .detalles {
+        text-align: left; /* Más fácil de leer en pantallas móviles */
+        font-size: 14px;
+    }
+
+    /* Ajuste del Footer en celular */
+    .pie-pagina {
+        flex-direction: column; /* Las columnas se ponen una debajo de otra */
+        align-items: center;
+        gap: 25px;
+        padding: 30px 15px;
+    }
+
+    .columna-footer {
+        min-width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+/* ==========================================================================
+   MENÚ DE COMUNIDADES (MODIFICADO Y REDIMENSIONADO)
+   ========================================================================== */
+
+/* CONTENEDOR - NO MODIFICAR */
+.contenedor-menu {
+    position: relative;
+    /* margin: 20px; */ /* Eliminado para permitir posicionamiento automático */
+    
+}
+
+/* OCULTAR CHECKBOX */
+#menu-toggle {
+    display: none;
+}
+
+/* BOTON (REDIMENSIONADO Y CAMBIO DE COLOR A VERDE) */
+.btn-menu {
+    background: #1e7b4e; /* Nuevo color Verde */
+    color: rgb(245, 242, 242);
+    width: 45px; /* Reducido de 55px */
+    height: 45px; /* Reducido de 55px */
+    border-radius: 8px; /* Ligeramente reducido */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-menu:hover {
+    background: #2a8f5d; /* Verde más claro en hover */
+}
+
+/* Redimensionar el icono SVG dentro del botón */
+.btn-menu svg {
+    width: 24px;  /* Reducido de 30px */
+    height: 24px; /* Reducido de 30px */
+}
+
+/* PANEL DEL MENU (REDIMENSIONADO) */
+.menu-comunidades {
+    position: absolute;
+    top: 75px; /* Ajustado para el nuevo tamaño del botón (45px + 10px) */
+    left: 0;
+    width: 200px; /* Reducido de 260px (más pequeño) */
+    max-height: 350px; /* Ligeramente reducido */
+    overflow-y: auto;
+
+     background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 8px; /* Ligeramente reducido */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* Sombra más sutil */
+
+    display: none; /* Oculto por defecto */
+    flex-direction: column;
+    z-index: 1000;
+    border: 1px solid #ddd; /* Añadido un borde sutil */
+}
+
+/* LINKS DENTRO DEL MENU (REDIMENSIONADOS) */
+.menu-comunidades a {
+    padding: 10px 14px; /* Reducido (padding vertical de 14px a 10px) */
+    text-decoration: none;
+    color: #080808;
+    border-bottom: 1px solid #f0f0f0; /* Borde más sutil */
+    transition: 0.2s ease;
+    font-family: 'Montserrat', sans-serif; /* Corregido formato */
+    font-size: 17px; /* Añadido tamaño de fuente más pequeño */
+}
+
+.menu-comunidades a:hover {
+    background: #1e7b4e; /* Mismo color verde del botón */
+    color: white;
+}
+
+/* ESTILOS DE BARRA DE DESPLAZAMIENTO (Opcional, para estética) */
+.menu-comunidades::-webkit-scrollbar {
+    width: 6px;
+}
+
+.menu-comunidades::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.menu-comunidades::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 3px;
+}
+
+/* ABRIR MENU - FUNCIONALIDAD */
+#menu-toggle:checked ~ .menu-comunidades {
+    display: flex; /* Muestra el menú cuando está checked */
+}
+
+/* ==========================================================================
+   POSICIONAMIENTO ALA IZQUIERDA DEL CUADRO DE BOTONES (CRÍTICO)
+   ========================================================================== */
+
+/*
+   Asegúrate de que tu HTML esté estructurado así:
+
+   <div class="contenedor-menu">
+       </div>
+   <div id="id-de-tu-cuadro-verde">
+       </div>
+*/
+
+#id-de-tu-cuadro-verde {
+    display: inline-block; /* O inline-flex */
+    vertical-align: top; /* Alineación vertical */
+    margin-left: 10px; /* Añade un espacio entre el menú y los botones */
+}
+
+/*fuente de mi titulo de mi calendario , principal */
+.titulo-linea {
+    font-family: 'Great Vibes', cursive;
+    font-size: 58px;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-top: 35px; /* Súbelo más cerca del menú */
+    margin-bottom: 10px;
+}
+
+.logo-footer {
+    display: block;
+    margin: 15px auto 0 auto;
+    width: 140px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}

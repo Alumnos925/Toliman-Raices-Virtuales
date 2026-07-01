@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Gastronomía</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+
+
+<script src="js/gastronomia.js"></script>
+<link rel="stylesheet" href="css/gastro.css">
+
+</head>
+
+<body>
+
+<!-- ENCABEZADO -->
+<header class="encabezado">
+    <img src="img/logotoliman.png" class="logo">
+    <h1>Gastronomía</h1>
+</header>
+
+<!-- MENÚ -->
+<nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="Historia.html">Historia</a>
+    <a href="Cultura.html">Cultura</a>
+    <a href="Artesanias.html">Artesanías</a>
+    <a href="Gastronomia.html">Gastronomía</a>
+    <a href="Zonas Turisticas.html">Zonas Turísticas</a>
+    <a href="Hospedaje.html">Hospedaje</a>
+    <a href="Galeria.html">Galería</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero-gastro">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>Gastronomía de Tolimán</h1>
+
+        <p>
+            Sabores tradicionales que representan la cultura,
+            historia y riqueza culinaria de Tolimán.
+        </p>
+    </div>
+
+</section>
+
+<!-- FILTROS -->
+<section class="fade">
+
+<h2>Nuestra Gastronomía</h2>
+
+<div class="filtros">
+
+    <button onclick="filtrar('todos')">
+        🍽️ Todos
+    </button>
+
+    <button onclick="filtrar('comida')">
+        🌮 Comida
+    </button>
+
+    <button onclick="filtrar('bebida')">
+        🥤 Bebidas
+    </button>
+
+    <button onclick="filtrar('frutos')">
+        🍎 Frutos
+    </button>
+
+</div>
+
+<!-- TARJETAS -->
+<div class="contenedor-platillos" id="platillos">
+
+    <!-- COMIDA -->
+
+    <div class="card" data-tipo="comida">
+        <img src="img/gorditas.jpg">
+        <h3>Gorditas</h3>
+        <p>Platillo tradicional elaborado con masa de maíz.</p>
+    </div>
+
+    <div class="card" data-tipo="comida">
+        <img src="img/Nopal penca.png">
+        <h3>Nopales en penca</h3>
+        <p>Ingrediente típico de la región semidesértica.</p>
+    </div>
+
+    <div class="card" data-tipo="comida">
+        <img src="img/toliman.9.jpeg">
+        <h3>Mole</h3>
+        <p>Platillo tradicional presente en festividades.</p>
+    </div>
+    
+    <div class="card" data-tipo="comida">
+        <img src="img/garvanzo.jpg">
+        <h3>Garvanzo</h3>
+        <p>Platillo tradicional presente en las diferentes festividades.</p>
+    </div>
+
+    <div class="card" data-tipo="comida">
+        <img src="img/tamal.jpg">
+        <h3>Tamales de vara</h3>
+        <p>Platillo ceremonial que suele prepararse en festividades y celebraciones comunitarias.</p>
+    </div>
+
+    <div class="card" data-tipo="comida">
+        <img src="img/tortillas.jpg">
+        <h3>Tortillas de color</h3>
+        <p>Hechas con maíces nativos y utilizadas tanto en la vida diaria como en eventos tradicionales.</p>
+    </div>
+
+    <!-- BEBIDAS -->
+
+    <div class="card" data-tipo="bebida">
+        <img src="img/pulque.jpg">
+        <h3>Pulque</h3>
+        <p>Bebida ancestral obtenida del maguey.</p>
+    </div>
+
+    <div class="card" data-tipo="bebida">
+        <img src="img/aguamiel.jpg">
+        <h3>Aguamiel</h3>
+        <p>Bebida natural extraída del maguey.</p>
+    </div>
+
+    <div class="card" data-tipo="bebida">
+        <img src="img/champurrado.jpg">
+        <h3>Champurrado</h3>
+        <p>Tipo de atole elaborado con masa de maíz y chocolate, muy consumido durante temporadas frías y festividades.</p>
+    </div>
+
+    <div class="card" data-tipo="bebida">
+        <img src="img/Colonche.jpg">
+        <h3>Colonche</h3>
+        <p>Bebida tradicional fermentada elaborada con tuna roja (fruto del nopal).</p>
+    </div>
+
+    <div class="card" data-tipo="bebida">
+        <img src="img/xoconostle.jpg">
+        <h3>Agua de xoconostle</h3>
+        <p>bebida refrescante preparada con el fruto del nopal conocido como xoconostle, de sabor ligeramente ácido.</p>
+    </div>
+
+    <!-- FRUTOS -->
+
+    <div class="card" data-tipo="frutos">
+        <img src="img/tuna.jpg">
+        <h3>Tuna</h3>
+        <p>Fruto representativo de la región.</p>
+    </div>
+
+    <div class="card" data-tipo="frutos">
+        <img src="img/xoconostlee.jpg">
+        <h3>Xoconostle</h3>
+        <p>Fruto utilizado en diferentes platillos.</p>
+    </div>
+
+    <div class="card" data-tipo="frutos">
+        <img src="img/guamiche.jpg">
+        <h3>Guamiche</h3>
+        <p>Fruto del cactus conocido como guamiche.
+Es pequeño, de color rojizo y sabor dulce.</p>
+    </div>
+
+    <div class="card" data-tipo="frutos">
+        <img src="img/Pitaya.jpg">
+        <h3>Pitaya</h3>
+        <p>Fruto de algunas cactáceas de la región.
+Destaca por su sabor dulce y colores llamativos.</p>
+    </div>
+
+    <div class="card" data-tipo="frutos">
+        <img src="img/guayaba.jpg">
+        <h3>Guayaba</h3>
+        <p>Fruto dulce y aromático. Se consume fresca y se utiliza en la elaboración de aguas, dulces, mermeladas y postres tradicionales.</p>
+    </div>
+
+    <div class="card" data-tipo="frutos">
+        <img src="img/garambullo.jpg">
+        <h3>Garambullo</h3>
+        <p>Fruto silvestre característico del semidesierto.</p>
+    </div>
+
+</div>
+
+</section>
+
+<!-- GALERIA -->
+<section class="fade" id="galeria">
+
+<h2>Galería</h2>
+
+<div class="carousel-container">
+
+    <div class="carousel" id="carousel">
+
+        <!-- COMIDA -->
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Comida tradicional">
+
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947" alt="Platillo mexicano">
+
+        <!-- BEBIDAS -->
+        <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b" alt="Bebida tradicional">
+
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Bebida caliente">
+
+        <!-- FRUTOS -->
+        <img src="https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6" alt="Frutos">
+
+        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b" alt="Frutas frescas">
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- HISTORIA -->
+<section class="fade" id="historia">
+
+<h2>Historia</h2>
+
+<div class="historia">
+<p>
+El pueblo de Tolimán conserva recetas transmitidas de generación en
+generación. Los visitantes pueden disfrutar de alimentos preparados
+de manera artesanal en mercados, fondas y festividades locales.
+</p>
+</div>
+
+</section>
+
+<section class="fade">
+
+    <h2>¿Dónde encontrarlos?</h2>
+
+    <div class="item-mapa">
+
+        <img src="img/mercado.png" alt="Mercado">
+
+        <div class="overlay-mapa">
+
+            <h3>Mercado Municipal de Tolimán</h3>
+
+            <p>
+                Visita el lugar donde podrás encontrar productos locales,
+                comida típica y bebidas tradicionales de la región.
+            </p>
+
+            <button onclick="abrirMapa()">
+                Ver mapa
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <span onclick="cerrarModal()">&times;</span>
+
+        <h2 id="tituloModal"></h2>
+
+        <p id="textoModal"></p>
+
+    </div>
+
+</div>
+<!-- MODAL MAPA -->
+
+<div id="modalMapa" class="modal-mapa">
+
+<div class="contenido-mapa">
+
+    <span class="cerrar-mapa" onclick="cerrarMapa()">
+        &times;
+    </span>
+
+    <h2>Mercado Municipal de Tolimán</h2>
+
+    <iframe
+        src="https://maps.google.com/maps?q=Mercado%20Municipal%20Toliman%20Queretaro&t=&z=16&ie=UTF8&iwloc=&output=embed"
+        width="100%"
+        height="450"
+        style="border:0;"
+        loading="lazy">
+    </iframe>
+
+</div>
+
+
+</div>
+
+
+<script src="js/gastronomia.js"></script>
+
+</body>
+</html>

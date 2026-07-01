@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cultura - Tolimán</title>
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/calendario.css">
+<link rel="stylesheet" href="css/Botones.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+<style>
+    /* Estilos necesarios para ocultar tarjetas y secciones */
+    .ocultar {
+        display: none !important;
+    }
+</style>
+</head>
+
+<body>
+
+
+<header class="encabezado">
+    <img src="img/logotoliman.png" class="logo">
+    <h1>Cultura Otomí</h1>
+</header>
+
+
+<nav class="menu">
+    <a href="index.html" data-hover="Ndu&#818;i"><span>Inicio</span></a>
+    <a href="Historia.html" data-hover="Mä Hämu&#818;"><span>Historia</span></a>
+    <a href="Cultura.html"  class="activo"  data-hover="Ya 'yu&#818;"><span>Cultura</span></a>
+    <a href="Artesanias.html" data-hover="T'e&#818;di"><span>Artesanías</span></a>
+    <a href="Gastronomia.html" data-hover="Ñhüni"><span>Gastronomía</span></a>
+    <a href="Zonas Turisticas.html" data-hover="Ba K'öni"><span>Zonas Turísticas</span></a>
+    <a href="hospedaje.html" data-hover="Tsa&#818;ya&#818;"><span>Hospedaje</span></a>
+    <a href="galeria.html" data-hover="K'oi"><span>Galería</span></a>
+</nav>
+
+
+<section class="tradiciones">
+
+<div class="hero-cultura">
+    <img src="img/otomi.1.jpg" alt="Cultura Otomí">
+    <div class="texto-hero">
+        <h1>Cultura Otomí-Chichimeca</h1>
+        <p>La cultura otomí se caracteriza por sus tradiciones, danzas, vestimenta tradicional, lengua indígena y festividades religiosas, las cuales forman parte de la identidad de nuestro pueblo. Su origen se remonta a tiempos ancestrales en la región semidesértica de Querétaro, donde cada una de nuestras comunidades ha conservado sus costumbres y tradiciones de generación en generación. A través de sus rituales, celebraciones, artesanías, gastronomía y la estrecha relación que mantienen con la naturaleza, los otomíes han preservado una riqueza cultural única. Gracias a su historia, sus tradiciones y al esfuerzo de las comunidades por mantenerlas vivas, esta cultura ha sido reconocida como un importante patrimonio que continúa fortaleciendo la identidad y el orgullo de nuestro pueblo.
+        </p>
+    </div>
+</div>
+
+<section class="tradiciones">
+    <h2 class="titulo-tradiciones">
+        Descubre la Esencia de Tolimán
+    </h2>
+    
+    <p class="subtitulo-tradiciones">
+        Sumérgete en las festividades, tradiciones y el patrimonio que han dado vida a Tolimán por generaciones.
+    </p>
+
+    <div class="galeria-tradiciones">
+        <div class="tradicion-card">
+            <img src="img/Levantamiento del Chimal .jpeg" alt="Danza de San Miguel">
+            <h3>Levantamiento del Chimal de San Miguel Arcángel</h3>
+            <button onclick="abrirModal('modal-danza')">Ver más</button>
+        </div>
+
+        <div class="tradicion-card">
+            <img src="img/Calendario (0).jpeg" alt="Levantamiento del Chimal">
+            <h3>Fe e Historia: San Pedro Apóstol y Fundación de Tolimán</h3>
+            <button onclick="abrirModal('modal-chimal')">Ver más</button>
+        </div>
+
+        <div class="tradicion-card">    
+            <img src="img/Calendario (44).jpeg" alt="Día de Muertos">
+            <h3>Tradición Ritual Ancestral a los Fieles Difuntos en Tolimán</h3>
+            <button onclick="abrirModal('modal-muertos')">Ver más</button>
+        </div>
+
+</section>
+
+<div id="modal-danza" class="modal">
+    <div class="modal-content">
+        <span class="cerrar" onclick="cerrarModal('modal-danza')">&times;</span>
+        <h2>Fiesta de San Miguel Arcángel</h2>
+        <div class="carrusel">
+            <button onclick="moverSlideDanza(-1)">&#10094;</button>
+            <img id="img-carrusel-danza" src="img/Danza.jpeg" alt="Danza de San Miguel">
+            <button onclick="moverSlideDanza(1)">&#10095;</button>
+        </div>
+        <p>Cada año, Tolimán se llena de historia, música y tradición con la llegada de la temporada de danzas en honor a San Miguel Arcángel. A partir del 1 de julio, las comunidades de San Miguel, Molino, Casas Viejas e Higueras dan inicio a una celebración que mantiene viva la esencia de la cultura otomí-chichimeca.
+Durante casi tres meses, los danzantes recorren las comunidades llevando consigo sus bailes, cantos y rezos tradicionales, compartiendo una herencia que ha sido transmitida por generaciones. Más que una celebración, es un encuentro donde las familias se unen, comparten sus costumbres y fortalecen el orgullo por sus raíces.
+La tradición culmina del 27 al 29 de septiembre con la Fiesta Patronal de San Miguel Arcángel, donde se realiza una de las ceremonias más representativas: el Levantamiento del Chimal. Esta impresionante estructura, creada con elementos del semidesierto y decorada por la propia comunidad, representa el agradecimiento por la tierra, sus frutos y la unión entre la tradición indígena y la fe católica.
+Con la participación de los cargueros, danzantes y habitantes de las comunidades, el Chimal se eleva como símbolo de identidad, esfuerzo y unidad. Una celebración que convierte a Tolimán en un lugar donde la historia, la espiritualidad y las tradiciones siguen vivas.
+</p>
+    </div>
+</div>
+
+<div id="modal-chimal" class="modal">
+    <div class="modal-content">
+        <span class="cerrar" onclick="cerrarModal('modal-chimal')">&times;</span>
+        <h2>Fe e Historia: San Pedro Apóstol y Fundación de Tolimán</h2>
+        <div class="carrusel">
+            <button onclick="moverSlideChimal(-1)">&#10094;</button>
+            <img id="img-carrusel-chimal" src="img/chimal.jpg" alt="Levantamiento del Chimal">
+            <button onclick="moverSlideChimal(1)">&#10095;</button>
+        </div>
+        <p>En el corazón de Tolimán se encuentra una celebración que reúne historia, fe y tradición: la Festividad de San Pedro Apóstol, patrono del municipio, una fecha que representa la identidad y el orgullo de su gente.
+Cada año, la Parroquia de San Pedro se convierte en un punto de encuentro donde habitantes y visitantes participan en misas, procesiones y actos religiosos, acompañados de música, danzas tradicionales, actividades culturales y espacios de convivencia que fortalecen la unión de la comunidad.
+Esta importante festividad también conmemora la fundación de Tolimán en el año de 1532, un momento que marcó el inicio de la historia de este municipio. Durante la celebración, las tradiciones cobran vida con expresiones culturales como la Danza de la Xaha, una muestra del legado y las raíces que han pasado de generación en generación.
+La Fiesta de San Pedro Apóstol es mucho más que una celebración religiosa; es un encuentro con la historia, la cultura y las tradiciones de Tolimán, donde cada año se mantiene vivo el espíritu de un pueblo lleno de identidad.
+</p>
+    </div>
+</div>
+
+<div id="modal-muertos" class="modal">
+    <div class="modal-content">
+        <span class="cerrar" onclick="cerrarModal('modal-muertos')">&times;</span>
+        <h2>Fiesta de los fieles Difuntos</h2>
+        <div class="carrusel">
+            <button onclick="moverSlideMuertos(-1)">&#10094;</button>
+            <img id="img-carrusel-muertos" src="img/altar.jpg" alt="Día de Muertos">
+            <button onclick="moverSlideMuertos(1)">&#10095;</button>
+        </div>
+        <p>En Tolimán, la celebración de los Fieles Difuntos es una de las tradiciones más significativas, un momento donde la historia, la espiritualidad y la memoria de nuestros antepasados se unen para mantener vivo el legado de las comunidades.
+Cada año, del 31 de octubre al 2 de noviembre, el municipio se llena de colores, aromas y costumbres que reflejan la riqueza de la cultura otomí-chichimeca. En los hogares, capillas familiares y espacios comunitarios se preparan altares y ofrendas con flores de cempasúchil, velas, alimentos tradicionales, tamales, atole y productos de la región, creando un espacio donde las familias recuerdan y reciben simbólicamente a quienes forman parte de su historia.
+Durante estos días, la comunidad participa en rezos, sahumerios, ceremonias y visitas al panteón. El 1 de noviembre se dedica a recordar a los santos angelitos y el 2 de noviembre a los fieles difuntos adultos, fortaleciendo la unión entre familias y generaciones. En algunas comunidades, las capillas familiares se convierten en lugares especiales donde se conserva esta tradición y se honra la memoria de los seres queridos.
+Esta celebración también representa el cierre del ciclo agrícola, un momento de agradecimiento por los frutos de la tierra y por la conexión que existe entre la naturaleza, la vida y quienes nos dejaron su historia.
+La Fiesta de los Fieles Difuntos en Tolimán es mucho más que una fecha en el calendario; es una tradición llena de identidad, donde cada altar, cada oración y cada recuerdo mantienen vivo el corazón de un pueblo que honra sus raíces y comparte su cultura con quienes lo visitan.
+</p>
+    </div>
+</div>
+
+<script>
+// Funciones Globales de Apertura/Cierre (Usa las que ya existen en Cultura.html)
+function abrirModal(id){
+    document.getElementById(id).style.display = "block";
+}
+function cerrarModal(id){
+    document.getElementById(id).style.display = "none";
+}
+
+// Lógica de Carruseles Independientes por cada Modal
+let imgsDanza = [
+    "img/Levantamiento del Chimal .jpeg",
+    "img/2026 chimal.png",
+    "img/chimal.jpg"
+];
+let idxDanza = 0;
+function moverSlideDanza(dir) {
+    idxDanza = (idxDanza + dir + imgsDanza.length) % imgsDanza.length;
+    document.getElementById("img-carrusel-danza").src = imgsDanza[idxDanza];
+}
+
+let imgsChimal = [
+    "img/chimal.jpg", 
+    "img/Danza.jpeg", 
+    "img/altar.jpg"
+];
+let idxChimal = 0;
+function moverSlideChimal(dir) {
+    idxChimal = (idxChimal + dir + imgsChimal.length) % imgsChimal.length;
+    document.getElementById("img-carrusel-chimal").src = imgsChimal[idxChimal];
+}
+
+let imgsMuertos = [
+    "img/altar.jpg", 
+    "img/Danza.jpeg", 
+    "img/chimal.jpg"
+];
+let idxMuertos = 0;
+function moverSlideMuertos(dir) {
+    idxMuertos = (idxMuertos + dir + imgsMuertos.length) % imgsMuertos.length;
+    document.getElementById("img-carrusel-muertos").src = imgsMuertos[idxMuertos];
+}
+</script>
+
+
+<h2 class="titulo-linea">Calendario de Tradiciones y Festividades</h2>
+
+</div>
+
+<nav class="filtros-contenedor">
+    <button class="btn-filtro activo" onclick="filtrarMes('todos')">Todos</button>
+    <button class="btn-filtro" onclick="filtrarMes('ENE')">Ene</button>
+    <button class="btn-filtro" onclick="filtrarMes('FEB')">Feb</button>
+    <button class="btn-filtro" onclick="filtrarMes('MAR')">Mar</button>
+    <button class="btn-filtro" onclick="filtrarMes('ABR')">Abr</button>
+    <button class="btn-filtro" onclick="filtrarMes('MAY')">May</button>
+    <button class="btn-filtro" onclick="filtrarMes('JUN')">Jun</button>
+    <button class="btn-filtro" onclick="filtrarMes('JUL')">Jul</button>
+    <button class="btn-filtro" onclick="filtrarMes('AGO')">Ago</button>
+    <button class="btn-filtro" onclick="filtrarMes('SEP')">Sep</button>
+    <button class="btn-filtro" onclick="filtrarMes('OCT')">Oct</button>
+    <button class="btn-filtro" onclick="filtrarMes('NOV')">Nov</button>
+    <button class="btn-filtro" onclick="filtrarMes('DIC')">Dic</button>
+</nav>
+
+    <main class="contenedor-calendario">
+        
+  
+  <div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ENE</span>
+        <span class="dia-txt">1</span>
+    </div>
+    <img src="img/Calendario (1).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> La Santa Cruz </h3>
+      <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 1 y 2 de enero – Fiesta de la Santa Cruz
+    Al finalizar la fiesta, la imagen es llevada al templo de San Pablo, donde se realiza la velación. Posteriormente, los días 1 y 2 de enero se celebra la Fiesta de la Santa Cruz, una de las festividades más importantes de la comunidad. Durante esta celebración llegan peregrinos de diferentes lugares, se realiza una misa especial y, al finalizar, se ofrece comida a todos los peregrinos y asistentes.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ENE</span>
+        <span class="dia-txt">6</span>
+    </div>
+    <img src="img/Calendario (2).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Señor de Saucito </h3>
+      <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Comunidad de Bomintzá</p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 6 al 10 de enero – Fiesta del Señor del Saucito, Bomintzá
+       Vive una de las tradiciones más representativas de Tolimán. Durante cinco días se realizan misas, procesiones y actividades religiosas que reúnen a familias y visitantes de la región. Una festividad llena de historia, convivencia y devoción que conserva las costumbres otomíes y mantiene vivo el legado cultural de sus antepasados, atrayendo, año con año, a visitantes de toda la región. </p>
+    </div>
+</div>
+       <div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">FEB</span>
+        <span class="dia-txt">2</span>
+    </div>
+    <img src="img/Calendario(3).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Día de la Candelaria </h3>
+      <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Municipio en general de Tolimán.</p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Purificación de la Virgen. Se viste al Niño Dios y se lleva a la iglesia para ser bendecido.</p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">FEB</span>
+        <span class="dia-txt">14</span>
+    </div>
+    <img src="img/Calendario (4).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festival Capital del Romance </h3>
+            <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Plaza principal, Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Durante todo el mes de febrero, destacando los sábados. Se fomenta el turismo, el amor, la unión familiar y la cultura local en un ambiente que celebra las tradiciones de la región mediante eventos artísticos, culturales y de convivencia para parejas y familias durante el mes del amor.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">FEB</span>
+        <span class="dia-txt">18</span>
+    </div>
+    <img src="img/calendario (5).jpg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Miércoles de Ceniza </h3>
+     <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> En todas las comunidades de la región </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>18 de febrero – Miércoles de Ceniza
+     Celebración que marca el inicio de la Cuaresma, un tiempo de reflexión, oración y preparación espiritual para la Semana Santa. Durante este día, los fieles acuden a la iglesia para recibir la ceniza en la frente como símbolo de fe, arrepentimiento y renovación. En muchas comunidades, esta tradición se vive con gran devoción y respeto, conservando costumbres transmitidas de generación en generación. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">FEB</span>
+        <span class="dia-txt">21</span>
+    </div>
+    <img src="img/Calendario (6).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Día Internacional de la Lengua Materna </h3>
+            <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>21 al 22 de febrero. Tolimán celebra el Día Internacional de la Lengua Materna con una gran muestra de cultura, tradición e identidad. En el Jardín Principal se realizan presentaciones artísticas, bailes tradicionales y actividades que resaltan la importancia de preservar las lenguas originarias. Una festividad que fortalece el orgullo por nuestras raíces y la riqueza cultural que da vida al municipio.
+ </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">FEB</span>
+        <span class="dia-txt">24</span>
+    </div>
+    <img src="img/Calendario (7).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Día de la Bandera </h3>
+            <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 24 de febrero – Día de la Bandera Mexicana 🇲🇽
+     Con orgullo y respeto, Tolimán conmemora el Día de la Bandera Mexicana, una fecha que celebra la identidad, la historia y los valores que unen a nuestro país. Mediante ceremonias cívicas y actos conmemorativos, se rinde homenaje al símbolo patrio que representa la libertad, la unidad y el espíritu de México. </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAR</span>
+        <span class="dia-txt">20</span>
+    </div>
+    <img src="img/Calendario (8).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festival del Equinoccio </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Jardín Principal de Tolimán y Cerro del Calvario</p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Cada 20 y 21 de marzo, Tolimán celebra el equinoccio con actividades que unen cultura, naturaleza e identidad.
+       El programa incluye desfiles de primavera, rituales tradicionales, danzas como la de Apaches y la Xaha, talleres de atole tradicional, música y lengua otomí. Destaca el Ritual del Buen Temporal en el Cerro del Calvario, donde se honra el equilibrio natural que marca el cambio de estación. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAR</span>
+        <span class="dia-txt">27</span>
+    </div>
+    <img src="img/calendario (9).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> La Virgen de los Dolores </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán y Mesa </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>27 y 28 de febrero – Tolimán y Mesa de Ramírez celebran con fe y tradición la festividad de la Virgen de los Dolores. Durante estos días se realizan rezos y velaciones en honor a la Virgen, y al día siguiente se comparte comida con los asistentes como muestra de agradecimiento.
+     En Mesa de Ramírez, la celebración destaca por la llegada de peregrinos de Colón y la participación de las tradicionales danzas de apaches.
+
+ </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAR</span>
+        <span class="dia-txt">29</span>
+    </div>
+    <img src="img/Calendario (10).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Domingo de Ramos (Se mana Santa) </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Todas las comunidades </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>29 de marzo –
+    Marca el inicio de la Semana Santa y recuerda la entrada triunfal de Jesucristo a Jerusalén. Con la celebración del Domingo de Ramos, La festividad incluye la bendición de palmas, una procesión por las principales calles y la Santa Misa. Por la noche, se realiza una velación que reúne a la comunidad en un ambiente de fe y reflexión.
+ </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">2</span>
+    </div>
+    <img src="img/Calendario (11).png" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Jueves Santo (Se Mana Santa) </h3>
+     <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> En todas las comunidades de la región </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Conmemora la Última Cena de Jesús. Se realizan procesiones, la Misa de la Cena del Señor y la adoración al Santísimo Sacramento.En Tolimán, la imagen del Santísimo es colocada afuera de la parroquia para su veneración, permitiendo que personas de distintas comunidades acudan a visitarlo y ofrecer una limosna voluntaria. Como muestra de agradecimiento, los asistentes reciben una pequeña ofrenda, como un bolillo o un ramo de manzanilla,fortaleciendo así una tradición de fe.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">3</span>
+    </div>
+    <img src="img/calendario (12).webp" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Viernes Santo (Se Mana Santa)</h3>
+     <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> En todas las comunidades de la región </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Día en el que se recuerda la pasión y muerte de Jesucristo. En Tolimán y sus comunidades se realizan representaciones bíblicas, el tradicional viacrucis viviente, procesiones y ceremonias religiosas que reúnen a la población en un ambiente de fe y reflexión. Estas actividades, que se llevan a cabo tanto en la cabecera municipal como en diversas delegaciones, son preparadas durante varios meses y cuentan con la participación de hombres, mujeres, jóvenes y niños.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">4</span>
+    </div>
+    <img src="img/Calendario (13).png" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Sábado de Gloria (Se Mana Santa)</h3>
+     <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> En todas las comunidades de la región </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>4 de abril – Sábado Santo o Sábado de Gloria
+            Una fecha de silencio, fe y esperanza dentro de la Semana Santa. Al caer la noche, la Solemne Vigilia Pascual ilumina los templos y anuncia con alegría la Resurrección de Jesucristo. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">5</span>
+    </div>
+    <img src="img/Calendario (14).png" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Domingo de Resurrección / Pascua (Se Mana Santa)</h3>
+     <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> En todas las comunidades de la región </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 5 de abril – Domingo de Resurrección o Pascua. En las comunidades de Tolimán celebran con gran entusiasmo la Resurrección de Jesucristo, una de las fechas más importantes de la fe católica. Entre campanas, cohetes, ceremonias religiosas y procesiones, habitantes y visitantes disfrutan de una jornada llena de tradición, identidad y convivencia que marca el cierre de la Semana Santa. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">8,10</span>
+    </div>
+    <img src="img/Calendario(15).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Peregrinación al Cerro del Zamorano </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Miguel y Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Informacion </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt"></span>
+    </div>
+    <img src="img/Calendario (16).png" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor al Santo Señor de Chalma </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Barrio El Tequesquite, Cerrito Parado </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Abril – Festividad en Honor al Santo Señor de Chalma
+     Con fe, música y tradición, las comunidades de Cerrito Parado y Barrio El Tequesquite celebran al Santo Señor de Chalma. Entre el sonido de los cohetes, las danzas, las ceremonias religiosas y la tradicional descolgada del pan, esta festividad ofrece una experiencia llena de cultura, identidad y convivencia para habitantes y visitantes. </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">26</span>
+    </div>
+    <img src="img/Calendario (17).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor al Santo Niño de Atocha </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Comunidad de Tierra Volteada </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Del 26 al 30 de abril. La celebración incluye el programa oficial con actividades religiosas, peregrinaciones y la participación de danzas tradicionales, destacando la Danza de Apaches, además de recibir peregrinos procedentes de Bernal. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">26</span>
+    </div>
+    <img src="img/Calendario(15).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Peregrinación al Cerro del Zamorano </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Maguey Manzo y Sabino de San Ambrosio </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Una de las tradiciones de fe más importantes de Tolimán. Peregrinos de Maguey Manso, El Saucito, El Sabino y San Ambrosio recorren el Cerro del Zamorano visitando diversos sitios sagrados. Los nuevos peregrinos encabezan la caminata, barren el camino para abrir paso a las dos imágenes que participan en el recorrido y realizan actos de devoción. Esta peregrinación fortalece la fe, la solidaridad y la unión entre las comunidades. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">ABR</span>
+        <span class="dia-txt">27</span>
+    </div>
+    <img src="img/Calendario(15).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Peregrinación al Cerro del Zamorano </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Puerto Blanco </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Una tradición de fe en la que los peregrinos recorren el Cerro del Zamorano visitando sitios sagrados como las antenas, una capilla y el lugar donde se encuentra una imagen representada por una piedra. Los nuevos peregrinos encabezan el recorrido y barren el camino para abrir paso a la imagen y realizan actos de penitencia y servicio durante la caminata. Durante la caminata, la comunidad comparte alimentos y bebidas con los peregrinos, fortaleciendo la convivencia.</p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">1</span>
+    </div>
+    <img src="img/calendario (20).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Peregrinación al Frontón </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>1 y 2 de mayo – Peregrinación al Cerro del Frontón
+Tradición otomí-chichimeca ancestral en la que cientos de peregrinos de San Pablo Tolimán recorren el camino hacia el Cerro del Frontón, acompañando a la Santa Cruz del Divino Salvador. Esta celebración de fe y cultura se realiza para pedir un buen temporal de lluvias y honrar a los antepasados. Al llegar al cerro sagrado participan en una velación, comparten alimentos y permanecen durante la noche, Manteniendo vivas las tradiciones.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">3</span>
+    </div>
+    <img src="img/Calendario (21).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Celebración al Cerro del Zamorano </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> La Matamba, Carrizalillo, Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Celebración ancestral en el Cerro del Zamorano, sitio sagrado para la cultura otomí-chichimeca, donde cada 3 de mayo los peregrinos ascienden para venerar a la Santa Cruz. Se realizan misas, velaciones, peregrinaciones y quema de cohetes en un ambiente de fe, tradición y comunidad </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">4</span>
+    </div>
+    <img src="img/Calendario (22).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> La Santa Cruz </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Sabino de San Ambrosio </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>4 de mayo – Festividad de la Santa Cruz
+
+Sabino de San Ambrosio celebra a la Santa Cruz con una jornada llena de color, música y participación comunitaria. Peregrinaciones, danzas tradicionales, celebraciones religiosas y cabalgatas convierten esta fecha en una de las expresiones culturales más destacadas de la región. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">5</span>
+    </div>
+    <img src="img/Calendario (23).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> La Santa Cruz </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Maguey Manso </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Maguey Manso se convierte en punto de encuentro de peregrinos y comunidades de la región otomí para celebrar a la Santa Cruz. Entre procesiones, ceremonias y muestras de convivencia, los participantes comparten alimentos tradicionales y realizan el ascenso al cerro como símbolo de agradecimiento y compromiso comunitario. Esta celebración destaca por su riqueza cultural y por mantener vivas las costumbres ancestrales del semidesierto queretano.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">8</span>
+    </div>
+    <img src="img/Calendario (24).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Aparición del Sr. San Miguel </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Miguel </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>8 de mayo – Aparición de San Miguel Arcángel
+ Según la tradición oral, San Miguel Arcángel se apareció en la cima del Cerro El Cantón, señalando el lugar donde debía establecerse su templo. Esta historia forma parte de la identidad de Tolimán y mantiene viva una de las devociones más importantes de la región, que cada año reúne a la comunidad para recordar sus raíces y tradiciones.</p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">14</span>
+    </div>
+    <img src="img/Calendario (25).png" alt="San Isidro" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor a San Isidro Labrador </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Nogales, Gudinos y San Antonio de la Cal, Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Del 14 al 15 de mayo. Celebración realizada con el propósito de que el Santo bendiga las tierras y, de esta manera, sean fructíferas </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">MAY</span>
+        <span class="dia-txt">15</span>
+    </div>
+    <img src="img/Calendario (25).png" alt="San Isidro" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor a San Isidro Labrador </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Casa Blanca </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>14 y 15 de mayo – Festividad en Honor a San Isidro Labrador Celebración dedicada a San Isidro Labrador para pedir la bendición de las tierras y una buena cosecha. Los festejos inician con el rosario por la noche y continúan al día siguiente con una misa y una procesión hacia Cerrito Parado. Al finalizar, conviven una comida comunitaria en Casa Blanca como símbolo de agradecimiento, unión y convivencia.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUN</span>
+        <span class="dia-txt">13</span>
+    </div>
+    <img src="img/Calendario (27).jpg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor a San Antonio de Padua </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Antonio de la Cal, Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Del 13 al 15 de junio. Se realiza una misa en honor al Santo y se hacen procesiones; hay música de viento y la llegada de la Santa Cruz de Bernal </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUN</span>
+        <span class="dia-txt">13</span>
+    </div>
+    <img src="img/Calendario (28).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor a San Antonio de Padua </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>13 de junio – Fiesta de San Antonio de Padua. Celebración tradicional en honor a San Antonio de Padua, realizada en la Capilla de San Antonio de Padua, ubicada en el Barrio de Los Cerritos. Una festividad llena de unión, costumbres y alegría, donde la comunidad comparte sus tradiciones y recibe a visitantes para conocer la riqueza cultural de la región.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUN</span>
+        <span class="dia-txt">29</span>
+    </div>
+    <img src="img/Calendario (29).jpeg" alt="San Pedro" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor a San Pedro Apóstol </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Parroquia de San Pedro, Cabecera Municipal de Tolimán, Qro. </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Celebración en honor a San Pedro Apóstol, patrono del municipio. Se realizan misas, procesiones y actos religiosos, acompañados de feria, danzas, música y convivencia comunitaria. Es una festividad tradicional que reúne a habitantes y visitantes </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUN</span>
+        <span class="dia-txt">29</span>
+    </div>
+    <img src="img/Calendario (30).png" alt="San Pedro" class="imagen-evento">
+    <div class="info-evento">
+        <h3> La fundación de Tolimán </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Parroquia de San Pedro, Cabecera Municipal de Tolimán, Qro. </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Tolimán celebra el aniversario de su fundación en 1532 junto con la festividad de San Pedro Apóstol, patrono del municipio. Durante esta importante fecha se realizan celebraciones religiosas, danzas tradicionales, actividades culturales y la emblemática Danza de la Xaha. Es una fiesta que conserva vivas las raíces históricas, culturales y religiosas de la comunidad </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUN</span>
+        <span class="dia-txt">29</span>
+    </div>
+    <img src="img/Calendario (31).jpeg" alt="San Pedro" class="imagen-evento">
+    <div class="info-evento">
+        <h3> El Aniversario de Tolimán </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Cabecera Municipal de Tolimán, Qro. </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>29 de junio – 494.º Aniversario de la Fundación de Tolimán
+ Conmemoración de los 494 años de la fundación de San Pedro Tolimán, acontecimiento que dio origen al municipio y que hoy forma parte de su riqueza histórica y cultural. Una fecha especial para conocer las raíces, costumbres y tradiciones que distinguen a Tolimán. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUN</span>
+        <span class="dia-txt">29</span>
+    </div>
+    <img src="img/Calendario (32).jpeg" alt=" Sampablo" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Fiesta de San Pablo apóstol</h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Vive una de las celebraciones llenas de fe, tradición y cultura de la comunidad. En honor a San Pablo Apóstol, habitantes y visitantes se reúnen en el Jardín Principal para disfrutar de una festividad donde la alegría, las costumbres y la convivencia se hacen presentes.
+     Una experiencia que invita a conocer nuestras raíces, compartir momentos especiales y ser parte de las tradiciones que mantienen viva la identidad de la comunidad.  </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUL</span>
+        <span class="dia-txt">1</span>
+    </div>
+    <img src="img/Calendario (33).jpeg" alt=" danza" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Inicio de la temporada de la Danza </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Miguel, Molino, C. Viejas y Higueras </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>1 de julio–Da inicio una de las celebraciones más importantes de la región, con una duración de más de tres meses.Participan las cuadrillas de Mayor, Chimal, Corte, Alvarado y Monarca. Durante esta festividad, las danzas llegan a la casa de los cargueros, quienes resguardan la imagen de San Miguel Arcángel, donde se comparten alimentos tradicionales como mole, garbanzos, tortillas hechas a mano, chocolate, pan y otros alimentos típicos</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUL</span>
+        <span class="dia-txt">24</span>
+    </div>
+    <img src="img/Calendario (34).jpeg" alt="Apostol" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Santiago Apóstol </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> El ciprés </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>24 y 25 de julio – Festividad de Santiago Apóstol
+   Una de las celebraciones más emblemáticas de la comunidad. La festividad inicia con la velación de la imagen de Santiago Apóstol y el tradicional encuentro entre los Alberos y la Danza de Apaches. Durante la noche se viven momentos llenos de música, danzas y ofrendas, mientras que al amanecer del 25 de julio se cantan Las Mañanitas, se anuncian los festejos con cohetes y se celebra la misa en honor al santo patrono. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUL</span>
+        <span class="dia-txt">25</span>
+    </div>
+    <img src="img/Calendario (35).png" alt="Apostol" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Santiago Apóstol </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Casas Viejas</p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>25 de julio – Festividad de Santiago Apóstol
+ La celebración inicia con Las Mañanitas y el tradicional anuncio de cohetes por parte de los Alberos. Durante el día se realiza la misa principal en honor a Santiago Apóstol, seguida de una comida y convivencia comunitaria. Los festejos continúan con cabalgatas, carreras de caballos, jaripeo, música en vivo y diversas actividades que reúnen a habitantes y visitantes de distintas comunidades.</p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">JUL</span>
+        <span class="dia-txt">31</span>
+    </div>
+    <img src="img/Calendario (36).jpeg" alt=" Maria" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Feria de la Gordita </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 31 de julio al 2 de agosto – Feria de la Gordita. Una de las celebraciones más esperadas de Tolimán. Durante varios días, habitantes y visitantes disfrutan de la gastronomía local, actividades culturales, música, artesanías, teatro del pueblo y actividades familiares. Esta feria resalta el sabor, la riqueza cultural y el orgullo que distinguen al municipio.
+</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">AGO</span>
+        <span class="dia-txt">15</span>
+    </div>
+    <img src="img/Calendario (37).jpeg" alt=" Maria" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Fiesta de la virgen del pueblito </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> El Pueblito, San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 15 de agosto – Fiesta de la Virgen del Pueblito
+ Una fecha donde la comunidad se reúne para compartir una tradición llena de historia, alegría y cultura. En la Capilla de la Virgen del Pueblito, los visitantes pueden disfrutar de danzas, música, comida tradicional y la esencia de una celebración que conserva las raíces de la región.
+Una experiencia que termina con la magia del castillo pirotécnico, haciendo de esta fiesta un momento inolvidable. </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">SEP</span>
+        <span class="dia-txt">15</span>
+    </div>
+    <img src="img/Calendario (38).png" alt=" Patrias " class="imagen-evento">
+    <div class="info-evento">
+        <h3> Bajan las cuadrillas en el jardín </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>El Jardín Principal es uno de los espacios más representativos de Tolimán. Durante las festividades, las cuadrillas de San Miguel Arcángel de Casa Blanca, La Loma, Casas Viejas, Molino y la Principal de San Miguel bajan al jardín para presentar sus danzas tradicionales, llenando el centro de música, color y cultura. Además, era costumbre que participaran como invitados especiales en las celebraciones patrias, acompañando el desfile y las actividades del Día del Grito. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">SEP</span>
+        <span class="dia-txt">15</span>
+    </div>
+    <img src="img/Calendario (39).jpeg" alt=" Patrias " class="imagen-evento">
+    <div class="info-evento">
+        <h3> Fiestas Patrias </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>15 y 16 de septiembre – Tolimán celebra las fiestas patrias con el tradicional Grito de Independencia encabezado por el presidente municipal, acompañado de música, cohetes y fuegos artificiales. Durante la noche, habitantes y visitantes disfrutan de antojitos mexicanos y convivencia familiar. Al día siguiente se realiza el desfile cívico, con la participación de estudiantes de diferentes instituciones, recorriendo las calles hasta llegar al Jardín Principal de Tolimán.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">SEP</span>
+        <span class="dia-txt">27</span>
+    </div>
+    <img src="img/Calendario (40).jpeg" alt=" San Miguel " class="imagen-evento">
+    <div class="info-evento">
+        <h3> San Miguel Arcángel </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span>San Miguel</p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>27 al 29 de septiembre.El Levantamiento del Chimal, es una festividad llena de fe, tradición y cultura que reúne a visitantes y comunidades de la región.
+  Durante esta celebración se realiza el Levantamiento del Chimal. Primero, la estructura es bajada para ser adornada por los cargueros, danzantes y personas.El Chimal es adornado y bendecido por la comunidad.Después, las cuadrillas realizan la salida de sus imágenes, dando paso al tradicional levantamiento del Chimal.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">OCT</span>
+        <span class="dia-txt">3</span>
+    </div>
+    <img src="img/Calendario (41).jpg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Corpus Christi </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Todas las comunidades </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Celebración religiosa en honor al Santísimo Cuerpo y Sangre de Cristo, realizada en las distintas comunidades de Tolimán con una misa y actos de fe. En la cabecera municipal se acostumbra celebrar en el patio de la parroquia, donde personas de diferentes comunidades y visitantes acuden a participar en esta tradición de oración, cultura y convivencia. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">NOV</span>
+        <span class="dia-txt"></span>
+    </div>
+    <img src="img/Calendario (42).png" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Celebración en honor al Santo Cristo Rey </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Carrizalillo, Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Antes del 20 de noviembre se venera año tras año. Hay misa, mañanitas, castillo, danzas y limpieza del lugar </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">NOV</span>
+        <span class="dia-txt">1</span>
+    </div>
+    <img src="img/Calendario (43).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Celebración de Todos los Santos </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span>  Municipio en general </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Se veneran las almas de todos los niños fallecidos o “angelitos”. Se involucran las 5 cuadrillas de danzas de San Miguel </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">NOV</span>
+        <span class="dia-txt">2</span>
+    </div>
+    <img src="img/Calendario (44).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Celebración de los Fieles Difuntos </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Municipio en general </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 31 de octubre al 2 de noviembre: Continúan escuchándose las campanas del templo, llamando a la comunidad para presenciar las misas en honor a los Fieles Difuntos. Durante estos días se conmemora el Día de Muertos con altares, muestra de catrinas y gastronomía tradicional </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">NOV</span>
+        <span class="dia-txt">20</span>
+    </div>
+    <img src="img/Calendario (45).jpeg" alt="Revolucion" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Aniversario de la Revolución </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán, San Pablo y Carrizalillo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>20 de noviembre – Aniversario de la Revolución Mexicana
+      Las comunidades de Tolimán, San Pablo y Carrizalillo conmemoran esta importante fecha con desfiles cívico-deportivos, actos culturales y honores a la bandera. Estudiantes, docentes y habitantes participan en una celebración que recuerda la historia de México y fortalece el orgullo y la identidad de la comunidad.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">NOV</span>
+        <span class="dia-txt">22</span>
+    </div>
+    <img src="img/Calendario (46).png" alt="Revolucion" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Santa Cecilia </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> El Puerto </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>22 de noviembre – Fiesta de Santa Cecilia 
+   En la comunidad de El Puerto, se celebra a Santa Cecilia, patrona de los músicos. La festividad reúne a músicos y familias en una noche de rezos, velación y baile en su honor, agradeciendo y reconociendo la importancia de los músicos en la comunidad. Al día siguiente, la comunidad comparte alimentos con los presentes como parte de agradecimiento de esta tradición. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">8</span>
+    </div>
+    <img src="img/calendario (47).jpg" alt="Purisima " class="imagen-evento">
+    <div class="info-evento">
+        <h3> Purísima Concepción </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Horno de cal y varias comunidades </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>Cada 8 de diciembre, Tolimán celebra con gran fe a la Purísima Concepción, una de las festividades religiosas más importantes del municipio. La Parroquia de San Pedro Tolimán reúne a fieles de distintas comunidades, quienes participan en la misa y los actos religiosos. Además, muchas comunidades del municipio también celebran esta fecha en sus propios templos, convirtiéndola en una tradición que reúne a familias, peregrinos y visitantes en un ambiente de devoción y unidad. </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">12</span>
+    </div>
+    <img src="img/Calendario (48).jpeg" alt="Santa Cruz" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Celebración en honor a la Virgen María </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Municipio en general </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>11 y 12 de diciembre – Una de las tradiciones más queridas de la comunidad, donde familias de diferentes lugares se reúnen para celebrar a la Virgen de Guadalupe con mañanitas, misas, primeras comuniones y una eucaristía especial. Durante la tarde-noche se realiza un recorrido por las comunidades acompañado de música, vehículos decorados y la participación de la gente, creando un ambiente lleno de cultura, alegría y unión.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">15</span>
+    </div>
+    <img src="img/Calendario (49).png" alt="Guadalupe " class="imagen-evento">
+    <div class="info-evento">
+        <h3> Virgen de Guadalupe </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Panales </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> Informacion </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">16</span>
+    </div>
+    <img src="img/Calendario (50).jpeg" alt="Navideñas" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Posadas navideñas </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Tolimán, San Pablo, San Miguel </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>16 de diciembre – Posada Navideña. Con el inicio de las posadas, el municipio de Tolimán, San Miguel y San Pablo celebran una de las tradiciones más representativas de la temporada navideña. Familias de distintas localidades se reúnen en la comunidad más cercana para compartir cantos, piñatas, ponche y convivencia, recordando el recorrido de María y José en busca de un lugar para el nacimiento de Jesús y fortaleciendo los lazos de unión entre la comunidad.</p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">24</span>
+    </div>
+    <img src="img/Calendario (51).jpeg" alt="Navideñas" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Nacimiento de Jesús </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Todas las comunidades </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>24 de diciembre – Nochebuena y Nacimiento del Niño Jesús
+
+Una noche de unión y tradición, donde las familias se reúnen para velar y arrullar al Niño Jesús a la medianoche. Entre cantos, colaciones, aguinaldos y convivencia, la comunidad celebra el nacimiento de Jesús y, al amanecer del 25 de diciembre, comparte alimentos con quienes participaron en esta hermosa tradición. </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">23</span>
+    </div>
+    <img src="img/Calendario (52).jpeg" alt="Navideñas" class="imagen-evento">
+    <div class="info-evento">
+        <h3>festejan al Santo Señor de Chalma </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Todas las comunidades, San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span>23 al 25 de diciembre – Fiesta de Chalma
+     Celebración tradicional en honor al Señor de Chalma, realizada en la Capilla de Chalma, ubicada en el Barrio del Centro. Durante estos días, la comunidad se reúne para compartir actividades religiosas, convivencia y tradiciones que forman parte de la identidad cultural de Tolimán. </p>
+    </div>
+</div>
+
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">31</span>
+    </div>
+    <img src="img/Calendario (53).png" alt="Señor del Llanito" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor al Señor del Llanito </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Bomintzá </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 31 de diciembre al 1 de enero: La imagen se lleva al templo del municipio para presenciar la misa y se regresa en peregrinación con banda y tambora, rezos y alabanzas </p>
+    </div>
+</div>
+<div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">31</span>
+    </div>
+    <img src="img/Calendario (54).jpeg" alt="Señor del Llanito" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Festividad en honor al Divino Salvador </h3>
+        <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> Bomintzá, Tolimán </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 31 de diciembre al 2 de enero: Entre tambores prehispánicos, sonajas y danzas, se realiza la veneración del Divino Salvador, que data de centenares de años atrás </p>
+    </div>
+</div>
+      <div class="tarjeta-evento">
+    <div class="badge-fecha">
+        <span class="mes-txt">DIC</span>
+        <span class="dia-txt">31</span>
+    </div>
+    <img src="img/Calendario (55).jpeg" alt="Evento" class="imagen-evento">
+    <div class="info-evento">
+        <h3> Último día del año para dar gracias </h3>
+      <p class="ubicacion"><span class="material-symbols-outlined icono-ubicacion">location_on</span> San Pablo </p>
+        <p class="detalles"><span class="material-symbols-outlined fecha">calendar_month</span> 31 de diciembre – Último Día del Año para Dar Gracias
+    Una tradición de agradecimiento y unión, donde habitantes de El Frontón realizan una peregrinación hacia San Pablo, acompañada de rezos y la danza de apaches. La celebración concluye con actividades religiosas y una convivencia comunitaria para despedir el año en armonía.</p>
+    </div>
+</div> 
+</section>
+
+<footer class="pie-pagina">
+    <div class="columna-footer">
+        <h3>Información de Contacto</h3>
+        <p><span class="material-symbols-outlined telefono">call</span> 441-296-7178</p>
+        <p><span class="material-symbols-outlined correo">mail</span> turismo@toliman.gob.mx</p>
+        <p><span class="material-symbols-outlined icono-ubicacion">location_on</span> Calle Independencia #4, Tolimán</p>
+        <p><span class="material-symbols-outlined mapa">map</span> Centro, Qro.</p>
+    </div>
+
+    <div class="columna-footer">
+        <h3>Redes Sociales</h3>
+        <p><span class="material-symbols-outlined grupo">groups</span> Coordinación de Turismo Tolimán</p>
+        <p><span class="material-symbols-outlined fecha">calendar_month</span> 2024 - 2027</p>
+        <p><span class="material-symbols-outlined web">language</span> Municipio de Tolimán</p>
+    </div>
+
+    <div class="columna-footer">
+        <p>Aviso de privacidad | Copyright © 2026</p>
+        <p>COORDINACIÓN DE TURISMO DEL</p>
+        <p>MUNICIPIO DE TOLIMÁN QRO.</p>
+        <img src="img/logotoliman.png" alt="Logo Turismo Tolimán" class="logo-footer">
+    </div>
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+        <h2>Danza de San Miguel</h2>
+        <div class="carrusel-modal">
+            <button class="prev" onclick="moverSlide(-1)">&#10094;</button>
+            <img id="imagen-carrusel" src="img/Danza.jpeg">
+            <button class="next" onclick="moverSlide(1)">&#10095;</button>
+        </div>
+        <p>La Danza de San Miguel representa identidad, devoción y herencia cultural en Tolimán.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+        <h2>Levantamiento del Chimal</h2>
+        <img src="img/chimal.jpg">
+        <p>El levantamiento del Chimal es una tradición ceremonial representativa del municipio.</p>
+    </div>
+</div>
+
+<div id="modal3" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+        <h2>Día de Muertos</h2>
+        <img src="img/altar.jpg">
+        <p>Celebración dedicada a honrar a los fieles difuntos mediante altares y ofrendas.</p>
+    </div>
+</div>
+
+<div id="modal4" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modal4')">&times;</span>
+        <h2>Levantamiento del Chimal</h2>
+        <img src="img/chimal.jpg">
+        <p>Historia completa del ritual...</p>
+    </div>
+</div>
+
+<div id="modal5" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modal5')">&times;</span>
+        <h2>Día de Muertos</h2>
+        <img src="img/altar.jpg">
+        <p>Celebración donde se colocan altares, ofrendas y flores para honrar a los difuntos.</p>
+    </div>
+</div>
+
+<div id="modal6" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('modal6')">&times;</span>
+        <h2>Fiestas Patronales</h2>
+        <img src="img/danza.jpeg">
+        <p>Celebraciones religiosas con danzas, música y participación de la comunidad.</p>
+    </div>
+</div>
+
+<div id="abril" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('abril')">&times;</span>
+        <h2>👶 Abril - Eventos</h2>
+        <img src="img/abril.jpg">
+        <p><b>Semana Santa:</b> Procesiones y actividades religiosas.</p>
+        <p><b>30 de Abril:</b> Día del Niño en el jardín municipal con juegos y actividades.</p>
+    </div>
+</div>
+
+<div id="septiembre" class="modal">
+    <div class="modal-contenido">
+        <span class="cerrar" onclick="cerrarModal('septiembre')">&times;</span>
+        <h2>🇲🇽 Septiembre - Fiestas Patrias</h2>
+        <img src="img/septiembre.jpg">
+        <p><b>15 de Septiembre:</b> Evento cultural en el jardín municipal con música y antojitos.</p>
+        <p><b>16 de Septiembre:</b> Desfile cívico por la Independencia de México.</p>
+        <p><b>29 de Septiembre:</b> Levantamiento del Chimal.</p>
+    </div>
+</div>
+
+
+<script>
+function abrirModal(id){
+    document.getElementById(id).style.display="block";
+}
+
+function cerrarModal(id){
+    document.getElementById(id).style.display="none";
+}
+</script>
+
+<script>
+let imagenes = [
+    "img/Danza.jpeg",
+    "img/danza2.jpg",
+    "img/danza3.jpg"
+];
+
+let indice=0;
+
+function moverSlide(direccion){
+    indice += direccion;
+    if(indice < 0){
+        indice = imagenes.length-1;
+    }
+    if(indice >= imagenes.length){
+        indice=0;
+    }
+    document.getElementById("imagen-carrusel").src=imagenes[indice];
+}
+</script>
+
+<script>
+// ========================================================
+// 1. FUNCIÓN PARA FILTRAR POR MES (Corregida e inteligente)
+// ========================================================
+function filtrarMes(mes, event) {
+    // Si la función se activó por un clic real, buscamos su contenedor cercano
+    let seccionActual = event ? event.target.closest('#toliman') : document.getElementById('toliman');
+    
+    if (!seccionActual) {
+        // Por si acaso, busca en el contenedor genérico de calendario
+        seccionActual = document.querySelector('.tradiciones') || document.body;
+    }
+
+    let tarjetas = seccionActual.querySelectorAll('.tarjeta-evento');
+    let botones = seccionActual.querySelectorAll('.btn-filtro');
+
+    // Quitar clase activo de todos los botones de esta sección
+    botones.forEach(btn => {
+        btn.classList.remove('activo');
+    });
+    
+    // Si vino de un clic directo de usuario, encendemos ese botón
+    if (event) {
+        event.target.classList.add('activo');
+    } else {
+        // Si se llama automáticamente, busca el botón correspondiente por texto
+        botones.forEach(btn => {
+            if(btn.textContent.toUpperCase() === mes.toUpperCase()) {
+                btn.classList.add('activo');
+            }
+        });
+    }
+
+    // Filtrar las tarjetas visibles
+    tarjetas.forEach(tarjeta => {
+        let mesTarjetaNode = tarjeta.querySelector('.mes-txt');
+        if (!mesTarjetaNode) return;
+        
+        let mesTarjeta = mesTarjetaNode.textContent.trim();
+
+        if (mes === 'todos' || mesTarjeta === mes) {
+            tarjeta.classList.remove('ocultar');
+        } else {
+            tarjeta.classList.add('ocultar');
+        }
+    });
+}
+
+
+// ========================================================
+// 2. DETECTOR INTELIGENTE PARA CERRAR EL MENÚ DE COMUNIDADES
+// ========================================================
+document.addEventListener('click', (event) => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const contenedorMenu = document.querySelector('.contenedor-menu');
+
+    // Si el menú está abierto y el clic fue COMPLETAMENTE fuera de toda la caja del menú...
+    if (menuToggle && menuToggle.checked && !contenedorMenu.contains(event.target)) {
+        menuToggle.checked = false; // Se cierra el menú
+    }
+});
+
+// CERRAR AL DESLIZAR (SCROLL) LA PANTALLA
+window.addEventListener('scroll', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    if (menuToggle && menuToggle.checked) {
+        menuToggle.checked = false; // Si empieza a deslizar, se guarda solo
+    }
+});
+</script>
+</body>
+</html>

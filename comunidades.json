@@ -1,0 +1,865 @@
+[
+  {
+    "id": "Delegación de Higueras",
+    "nombre": "Delegación de Higueras",
+    "eventos": [
+      {
+        "mes": "Delegación de Higueras",
+        "titulo": "Fiestas",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      },
+      {
+        "mes": "JUN",
+        "dia": "29",
+        "titulo": "San Pedro Apóstol",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "29 de junio",
+        "detalles": "Conmemoración del santo patrón de la región."
+      }
+    ]
+  },
+
+
+  {
+    "id": "barrio-de-don-lucas",
+    "nombre": "Barrio de don Lucas",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes. Conmemora la pasión..."
+      },
+      {
+        "mes": "MAR",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes. Conmemora la pasión..."
+      }
+    ]
+  },
+
+    {
+    "id": "barrio-de-garcia",
+    "nombre": "Barrio de garcias",
+    "eventos": [
+      {
+        "mes": " JUN",
+        "dia": "4",
+        "titulo": "San Miguel Arcángel",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes. Conmemora la pasión..."
+      },
+      {
+        "mes": " ENE",
+        "dia": "4",
+        "titulo": "San Miguel Arcángel",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes. Conmemora la pasión..."
+      }
+    ]
+  },
+   {
+    "id": "bomintza",
+    "nombre": "bomintza",
+    "eventos": [
+      {
+        "mes": " JUN",
+        "dia": "4",
+        "titulo": "San Miguel Arcángel",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes. Conmemora la pasión..."
+      },
+      {
+        "mes": " ENE",
+        "dia": "4",
+        "titulo": "San Miguel Arcángel",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes. Conmemora la pasión..."
+      }
+    ]
+  },
+  {
+    "id": "calvario",
+    "nombre": "Calvario",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "carrizalillo",
+    "nombre": "Carrizalillo",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "casa-blanca",
+    "nombre": "Casa Blanca",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "casas-viejas",
+    "nombre": "Casas Viejas",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "chalma",
+    "nombre": "Chalma",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "colonia-nueva",
+    "nombre": "Colonia Nueva",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "crucitas",
+    "nombre": "Crucitas",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "diez-meros",
+    "nombre": "Diez Meros",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-blanco",
+    "nombre": "El Blanco",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-cipres",
+    "nombre": "El Ciprés",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-granjeno",
+    "nombre": "El Granjeno",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-lindero",
+    "nombre": "El Lindero",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-longo",
+    "nombre": "El Longo",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-naranjo",
+    "nombre": "El Naranjo",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-sausito",
+    "nombre": "El Sausito",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "el-tule",
+    "nombre": "El Tule",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "gonzalez",
+    "nombre": "González",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "gudinos",
+    "nombre": "Gudiños",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "horno-de-cal",
+    "nombre": "Horno de Cal",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "la-canada",
+    "nombre": "La Cañada",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "la-estancia",
+    "nombre": "La Estancia",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "la-loma",
+    "nombre": "La Loma",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "la-presita",
+    "nombre": "La Presita",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "la-puerta",
+    "nombre": "La Puerta",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "la-seboya",
+    "nombre": "La Seboya",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "lomas-de-casa-blanca",
+    "nombre": "Lomas de Casa Blanca",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "los-albaniles",
+    "nombre": "Los Albañiles",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "los-eucaliptos",
+    "nombre": "Los Eucaliptos",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "maguey-manso",
+    "nombre": "Maguey Manso",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "mesa-de-chagolla",
+    "nombre": "Mesa de Chagolla",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "mesa-de-ramirez",
+    "nombre": "Mesa de Ramírez",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "nogales",
+    "nombre": "Nogales",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "panales",
+    "nombre": "Panales",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "puerto-blanco",
+    "nombre": "Puerto Blanco",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  [
+  {
+    "id": "la-seboya",
+    "nombre": "La Seboya",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "lomas-de-casa-blanca",
+    "nombre": "Lomas de Casa Blanca",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "los-albaniles",
+    "nombre": "Los Albañiles",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "los-eucaliptos",
+    "nombre": "Los Eucaliptos",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "maguey-manso",
+    "nombre": "Maguey Manso",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "mesa-de-chagolla",
+    "nombre": "Mesa de Chagolla",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "mesa-de-ramirez",
+    "nombre": "Mesa de Ramírez",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "nogales",
+    "nombre": "Nogales",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "panales",
+    "nombre": "Panales",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "puerto-blanco",
+    "nombre": "Puerto Blanco",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "rancho-viejo",
+    "nombre": "Rancho Viejo",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "rincon",
+    "nombre": "Rincón",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "sabino",
+    "nombre": "Sabino",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "san-antonio",
+    "nombre": "San Antonio",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "san-miguel",
+    "nombre": "San Miguel",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "san-pablo",
+    "nombre": "San Pablo",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "serrito-parado",
+    "nombre": "Serrito Parado",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "shaminal",
+    "nombre": "Shaminal",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "terrero",
+    "nombre": "Terrero",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "tierra-volteada",
+    "nombre": "Tierra Volteada",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  },
+  {
+    "id": "toliman",
+    "nombre": "Tolimán",
+    "eventos": [
+      {
+        "mes": "FEB",
+        "dia": "2",
+        "titulo": "Semana Santa",
+        "imagen": "img/Calendario(2).png",
+        "fechaTexto": "2 al 5 de abril",
+        "detalles": "Celebración de fe y tradición precedida por la costumbre de abstenerse de comer carne los viernes..."
+      }
+    ]
+  }
+  ]
+]
+

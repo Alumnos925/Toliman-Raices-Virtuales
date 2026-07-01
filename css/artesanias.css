@@ -1,0 +1,49 @@
+/* ============================= */
+/* ARTESANIAS CARDS */
+/* ============================= */
+
+.grid-artesanias{
+display:grid;
+
+grid-template-columns:repeat(4, 1fr);
+
+gap:30px;
+
+justify-content:center;
+align-items:start;
+}
+
+.card-artesania{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:.4s;
+
+width:100%;
+max-width:320px;
+margin:auto;
+}
+
+.card-artesania:hover{
+transform:translateY(-12px) scale(1.02);
+}
+
+.card-artesania img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:.4s;
+}
+
+.card-artesania:hover img{
+transform:scale(1.1);
+}
+
+.card-artesania h3{
+padding:15px;
+}
+
+.card-artesania p{
+padding:0 15px 20px;
+}

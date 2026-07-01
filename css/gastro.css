@@ -1,0 +1,205 @@
+/* ============================= */
+/* ARTESANIAS CARDS */
+/* ============================= */
+
+.grid-artesanias{
+display:grid;
+
+grid-template-columns:repeat(4, 1fr);
+
+gap:30px;
+
+justify-content:center;
+align-items:start;
+}
+
+.card-artesania{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+transition:.4s;
+
+width:100%;
+max-width:320px;
+margin:auto;
+}
+
+.card-artesania:hover{
+transform:translateY(-12px) scale(1.02);
+}
+
+.card-artesania img{
+width:100%;
+height:220px;
+object-fit:cover;
+transition:.4s;
+}
+
+.card-artesania:hover img{
+transform:scale(1.1);
+}
+
+.card-artesania h3{
+padding:15px;
+}
+
+.card-artesania p{
+padding:0 15px 20px;
+}
+/* ============================= */
+/* HERO GASTRONOMIA */
+/* ============================= */
+
+.hero-content h1{
+    color:white !important;
+}
+
+.hero-content p{
+    color:white !important;
+}
+/* ========================= */
+/* MODAL MAPA */
+/* ========================= */
+
+.modal-mapa{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.75);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.contenido-mapa{
+width:90%;
+max-width:900px;
+background:white;
+border-radius:15px;
+padding:20px;
+position:relative;
+}
+
+.contenido-mapa h2{
+text-align:center;
+margin-bottom:15px;
+}
+
+.cerrar-mapa{
+position:absolute;
+top:10px;
+right:20px;
+font-size:35px;
+cursor:pointer;
+font-weight:bold;
+}
+
+.cerrar-mapa:hover{
+color:red;
+}
+/* ========================= */
+/* DONDE ENCONTRARLOS */
+/* ========================= */
+
+.item-mapa{
+    position:relative;
+    max-width:1200px;
+    margin:auto;
+
+    border-radius:25px;
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.item-mapa img{
+    width:100%;
+    height:auto;      /* IMPORTANTE */
+    display:block;    /* evita espacios blancos */
+}
+
+.overlay-mapa{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.35);
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    padding:60px;
+
+    color:white;
+}
+
+.overlay-mapa h3{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.overlay-mapa p{
+    max-width:500px;
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.overlay-mapa button{
+    width:180px;
+
+    border:none;
+    border-radius:30px;
+
+    padding:15px;
+
+    background:#2c5e3f;
+    color:white;
+
+    font-size:1rem;
+    cursor:pointer;
+}
+
+.overlay-mapa button:hover{
+    background:#214730;
+}
+.carousel-container{
+    width:100%;
+    overflow:hidden;
+}
+
+.carousel{
+    display:flex;
+    transition:transform 0.8s ease;
+}
+
+.carousel img{
+    min-width:100%;
+    height:400px;
+    object-fit:cover;
+}
+.carousel-container{
+    width:100%;
+    max-width:1000px;
+    margin:auto;
+    overflow:hidden;
+}
+
+.carousel{
+    display:flex;
+    transition:transform 0.8s ease;
+}
+
+.carousel img{
+    min-width:100%;
+    height:500px;
+    object-fit:cover;
+}

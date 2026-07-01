@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Historia - Tolimán</title>
+
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/historias.css">
+<link rel="stylesheet" href="css/botones.css">
+
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     ENCABEZADO
+========================= -->
+
+<header class="encabezado">
+
+    <img src="img/logotoliman.png" class="logo">
+
+    <h1>Historia de Tolimán</h1>
+
+</header>
+
+
+
+<!-- =========================
+     MENÚ
+========================= -->
+
+<nav class="menu">
+    <a href="index.html" data-hover="Ndu&#818;i"><span>Inicio</span></a>
+
+    <a href="Historia.html"  class="activo"  data-hover="Mä Hämu&#818;"><span>Historia</span></a>
+
+    <a href="Cultura.html" data-hover="Ya 'yu&#818;"><span>Cultura</span></a>
+    <a href="Artesanias.html" data-hover="T'e&#818;di"><span>Artesanías</span></a>
+    <a href="Gastronomia.html" data-hover="Ñhüni"><span>Gastronomía</span></a>
+    <a href="Zonas Turisticas.html" data-hover="Ba K'öni"><span>Zonas Turísticas</span></a>
+    <a href="hospedaje.html" data-hover="Tsa&#818;ya&#818;"><span>Hospedaje</span></a>
+    <a href="galeria.html" data-hover="K'oi"><span>Galería</span></a>
+</nav>
+
+
+
+<!-- =========================
+     HERO HISTORIAS
+========================= -->
+<section class="historias">
+    <h2 class="titulo-seccion">
+        Historias de Tolimán
+    </h2>
+
+    <div class="contenedor-historias">
+
+        <!-- CARD 1 -->
+        <div class="card-historia">
+            <img src="img/reloj.jpeg" alt="Historia Municipio">
+            <div class="contenido-historia">
+                <h3>Historia del Municipio</h3>
+                <p>
+                    Descubre el origen de Tolimán, desde su raíz náhuatl, su colonización en 1560 y su evolución hasta convertirse en ciudad Patrimonio de la Humanidad.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal1')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audios/audio1.mpeg"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card-historia">
+            <img src="img/El fraile.jpg" alt="Historia Fraile">
+            <div class="contenido-historia">
+                <h3>Historia del Fraile</h3>
+                <p>
+                    La crónica de los monjes franciscanos que fundaron el convento en 1583 y se versaron en la lengua otomí para evangelizar la región.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal2')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/fraile.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card-historia">
+            <img src="img/hacienda1.jpg" alt="Hacienda">
+            <div class="contenido-historia">
+                <h3>Hacienda San Antonio</h3>
+                <p>
+                    Antiguo e histórico centro de adoración prehispánica junto a la Peña de Bernal que evolucionó en un pilar comercial clave del municipio.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal3')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/san-antonio.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="card-historia">
+            <img src="img/hacienda2.jpg" alt="Hacienda">
+            <div class="contenido-historia">
+                <h3>Hacienda Casas Viejas</h3>
+                <p>
+                    Tierra de profunda resistencia cultural otomí, danzas rituales heredadas y escenario de importantes cuarteles militares en 1849.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal4')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/casas-viejas.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="card-historia">
+            <img src="img/capillas_linaje.jpg" alt="Capillas de Linaje">
+            <div class="contenido-historia">
+                <h3>Capillas de Linaje</h3>
+                <p>
+                    Pequeños santuarios familiares de ascendencia otomí-chichimeca que resguardan la fe y el culto sagrado a los antepasados.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal5')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/capillas_linaje.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="card-historia">
+            <img src="img/chimal_historia.jpg" alt="Crónica del Chimal">
+            <div class="contenido-historia">
+                <h3>El Levantamiento del Chimal</h3>
+                <p>
+                    La crónica de la imponente ofrenda monumental de flora y fe de más de 20 metros alzada a pura fuerza humana en honor a San Miguel.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal6')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/chimal.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="card-historia">
+            <img src="img/san_miguel.jpg" alt="Historia de San Miguel">
+            <div class="contenido-historia">
+                <h3>Historia de San Miguel</h3>
+                <p>
+                    La antigua congregación de indios naturales que se convirtió en el epicentro ritual de las danzas autóctonas del semidesierto.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal7')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/san_miguel.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="card-historia">
+            <img src="img/textiles_toliman.jpg" alt="Tradición Textil">
+            <div class="contenido-historia">
+                <h3>Tradición Textil y Deshilado</h3>
+                <p>
+                    El relato histórico detrás de las técnicas ancestrales del telar de cintura y el intrincado arte colonial del deshilado.
+                </p>
+                
+                <!-- Controles: Leer más y Audio -->
+                <div class="botones-container">
+                    <button class="btn-leer-mas" onclick="abrirModal('modal8')">
+                        Leer más
+                    </button>
+                    <div class="audio-container">
+                        <audio src="audio/textiles_toliman.mp3"></audio>
+                        <button class="btn-audio" onclick="toggleAudio(this)">
+                            <span class="btn-icon">▶</span>
+                            <span class="btn-text">Escuchar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- =========================
+     LINEA DEL TIEMPO
+========================= -->
+
+<section class="timeline">
+
+    <h2 class="titulo-seccion">
+        Línea del Tiempo
+    </h2>
+
+    <div class="linea">
+
+        <div class="evento">
+
+            <h3>1700</h3>
+
+            <p>
+                Primeros asentamientos importantes.
+            </p>
+
+        </div>
+
+
+
+        <div class="evento">
+
+            <h3>1800</h3>
+
+            <p>
+                Desarrollo de haciendas y agricultura.
+            </p>
+
+        </div>
+
+
+
+        <div class="evento">
+
+            <h3>1900</h3>
+
+            <p>
+                Conservación de tradiciones otomíes.
+            </p>
+
+        </div>
+
+
+
+        <div class="evento">
+
+            <h3>2009</h3>
+
+            <p>
+                Reconocimiento UNESCO.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- =========================
+     MODAL 1
+========================= -->
+
+<div class="modal" id="modal1">
+
+    <div class="modal-contenido">
+
+        <span class="cerrar"
+        onclick="cerrarModal('modal1')">
+        &times;
+        </span>
+
+        <h2>Historia del Municipio</h2>
+
+        <p>
+        Tolimán forma parte del semidesierto queretano,
+        conservando vivas sus tradiciones otomí-chichimecas
+        y siendo reconocido por la UNESCO como patrimonio cultural.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     MODAL 2
+========================= -->
+
+<div class="modal" id="modal2">
+
+    <div class="modal-contenido">
+
+        <span class="cerrar"
+        onclick="cerrarModal('modal2')">
+        &times;
+        </span>
+
+        <h2>Historia del Fraile</h2>
+
+        <p>
+        El Fraile es una de las formaciones rocosas más
+        emblemáticas de Tolimán, rodeada de leyendas,
+        cultura y tradición del semidesierto.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- =========================
+     MODAL 3
+========================= -->
+
+<div class="modal" id="modal3">
+
+    <div class="modal-contenido">
+
+        <span class="cerrar"
+        onclick="cerrarModal('modal3')">
+        &times;
+        </span>
+
+        <h2>Hacienda San Antonio</h2>
+
+        <p>
+        La Hacienda San Antonio fue parte importante
+        del desarrollo agrícola y económico de la región.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- =========================
+     MODAL 4
+========================= -->
+
+<div class="modal" id="modal4">
+
+    <div class="modal-contenido">
+
+        <span class="cerrar"
+        onclick="cerrarModal('modal4')">
+        &times;
+        </span>
+
+        <h2>Hacienda Casas Viejas</h2>
+
+        <p>
+        Una de las construcciones históricas más representativas
+        del municipio y símbolo del pasado colonial.
+        </p>
+
+    </div>
+
+</div>
+<!-- =========================
+     JS
+========================= -->
+
+<script src="js/historias.js"></script>
+
+</body>
+</html>
